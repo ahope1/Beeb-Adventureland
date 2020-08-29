@@ -5,4 +5,4 @@ BBC Micro port of the TRS-80 BASIC version of Scott Adams's Adventureland as pub
 
 Under construction...
 
-A [BBC Micro port](https://github.com/ahope1/Beeb-Pirate-Adventure) of the TRS-80 BASIC version of Scott Adams's Pirate Adventure is also available.  
+A BBC Micro port of the TRS-80 BASIC version of Scott Adams's [Pirate Adventure](https://github.com/ahope1/Beeb-Pirate-Adventure) is also available.  

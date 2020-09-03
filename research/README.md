@@ -2,6 +2,6 @@
 
 **adventureland.cas** is a TRS-80 tape-image that was sent to me by Jimmy Maher of the Digital Antiquarian blog. He's not sure what's on it, and neither am I because I can't get it to load successfully with any program (or even with CLOAD) in any emulator!
 
-**adventureland.cas.txt** is the output of ACAS.exe, the [CAS File Checker (or ACAS CAS Analyzer)](http://www.trs-80.com/wordpress/conversion-tape-utilities/), after it's processed adventureland.cas (above). I don't know what the output means!
+**adventureland.cas.txt** is the output of ACAS.exe, the [CAS File Checker (or ACAS CAS Analyzer)](http://www.trs-80.com/wordpress/conversion-tape-utilities/), after it's processed adventureland.cas (above). I don't understand the contents of this file!
 
 **games.dsk** is a TRS-80 disk-image, also sent to me by Jimmy Maher. It seems to contain the standard Scott Adams BASIC adventure interpreter from way back. The interpreter is the same as, or similar to, the one that I got from the [Data Driven Gamer website](http://datadrivengamer.blogspot.com/2018/11/adventureland-introduction-to-trs-80.html) (which I modified to make it print out the data for Adventureland from the Data Driven Gamer's .WAV tape-image — which is how this repo got started).

@@ -4,7 +4,7 @@ The SoftSide listing had a fatal bug in it, which has been fixed in the BBC Micr
 
 https://github.com/ahope1/Beeb-Adventureland
 
-Note that there's something funny going on with the BEES near the end of the game. They sometimes sting you, which may or may not be fatal. I'm not sure if this behaviour is what Scott Adams intended. In any case, if you get stung, you may be sent to limbo, whence you can often escape if you GO EAST. Or just try again. 
+Note that there's something funny going on with the BEES near the end of the game. They sometimes sting you, which may or may not be fatal. I'm not sure if this behaviour is what Scott Adams intended. In any case, if you get stung, you may be sent to limbo, from where you can escape if you GO EAST. Or just try again. 
 
 Note also that whenever there's a blank line in the walkthrough below, you must pause and check whether you've been bitten by chiggers. If you have, then you must GET MUD to heal the bites.
 

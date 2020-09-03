@@ -1,0 +1,173 @@
+Walkthrough (solution) for the 2020 BBC Micro port of the "original" TRS-80 BASIC version of Scott Adams's text adventure game Adventureland, as it was published in SoftSide magazine in 1980. 
+
+The SoftSide listing had a fatal bug in it, which has been fixed in the BBC Micro port:
+
+https://github.com/ahope1/Beeb-Adventureland
+
+Note that there's something funny going on with the BEES near the end of the game. They sometimes sting you, which may or may not be fatal. I'm not sure if this behaviour is what Scott Adams intended. In any case, if you get stung, you may be sent to limbo, whence you can often escape if you GO EAST. Or just try again. 
+
+Note also that whenever there's a blank line in the walkthrough below, you must pause and check whether you've been bitten by chiggers. If you have, then you must GET MUD to heal the bites.
+
+GO EAST
+GO EAST
+GET AXE
+GO EAS
+BUNYON
+SWIM
+GO WES
+GO WES
+GET OX
+GET AXE
+GET FRUIT
+GO EAS
+
+CLI TRE
+GET KEYS
+GO DOW
+CHOP TREE
+DROP AXE
+
+GO STUMP
+DROP FRUIT
+DROP OX
+GET LAMP
+RUB LAMP
+RUB LAMP
+GET BOTTL
+GO DOW
+GET RUB
+GO UP
+DROP RUB
+GO DOWN
+GO HOLE
+UNLO DOOR
+DROP KEYS
+DROP BOTTL
+GO HALL
+LIGHT LAMP
+GO DOW
+GO SOU
+GET BLA
+GO NOR
+GO DOW
+GO DOW
+GET FLINT
+GO WEST
+GO NOR
+GET RUG
+GO DOWN
+GET NET
+GO UP
+AWAY
+LAMP OFF
+GO SOU
+DROP BLA
+
+GO STUMP
+GO DOWN
+GO HOLE
+GET BOTTL
+GO UP
+GO UP
+DROP FLINT
+GO UP
+
+GO NOR
+GO EAS
+GET FISH
+GO SOU
+GO WES
+
+GO STUMP
+DROP FISH
+DROP NET
+
+DROP BOTTLE
+GO UP
+GET BLA
+GET GAS
+
+GO STUMP
+GET FLINT
+GO DOWN
+GO HOLE
+GO HALL
+LAMP ON
+GO DOWN
+GO SOUTH
+GO UP 
+DROP BLA
+LIGHT GAS
+DROP FLINT
+GO LEDGE
+JUMP
+YELL
+GET MIRR
+GO THRONE
+GET CROWN
+GO DOW
+JUMP
+GO WES
+GO DOW
+GO NOR
+GO UP
+GO UP
+GO UP
+GO UP
+DROP CRO
+GO DOW
+GO HOLE
+GO HALL
+GO DOW
+GO SOU
+GO UP
+GET BRICK
+GO DOW
+GO NOR
+GO DOW
+GO DOW
+GO WES
+GO NOR
+GO DOW
+DROP BRI
+GET FIR
+GO UP
+AWAY
+LAMP OFF
+GO SOU
+
+GO STUMP
+DROP FIR
+DROP RUG
+DROP MIR
+GET BOTT
+GO UP
+GET MUD
+
+GO STUMP
+GO DOWN
+GO HOLE
+GO HALLWAY
+LIGHT LAMP
+GO DOWN
+GO NOR 
+GET HONEY
+DRINK WATER
+GET BEES
+GO SOUTH
+GO UP
+GO UP
+GO UP
+GO UP
+DROP MUD
+GO UP
+
+GO NORTH
+DROP BEES
+GET EGGS 
+GO SOUTH
+
+GO STUMP
+DROP EGGS
+DROP HONEY
+SCORE

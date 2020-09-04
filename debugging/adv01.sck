@@ -1,0 +1,1196 @@
+# 34 rooms, 66 items, 170 actions
+# 76 messages, 13 treasures, 70 verbs/nouns
+ident 1
+version 416
+wordlen 3
+maxload 6
+lighttime 125
+unknown1 5953
+unknown2 819
+start forest
+treasury swamp
+
+verbgroup GO ENT RUN WAL CLI
+verbgroup CHO CUT
+verbgroup GET TAK PIC CAT
+verbgroup LIG "." IGN BUR
+verbgroup DRO REL SPI LEA GIV POU
+verbgroup THR TOS
+verbgroup LOO EXA DES
+verbgroup ATT SLA KIL
+verbgroup DRI EAT
+verbgroup FIN LOC
+verbgroup SAY SPE CAL
+verbgroup SCR YEL HOL
+verbgroup MAK BUI
+verbgroup WAV TIC KIC KIS TOU FEE FUC HIT POK
+
+noungroup AXE AX
+noungroup BOT CON
+noungroup MUD MED
+noungroup OIL SLI
+noungroup CHI BIT
+noungroup WEB WRI
+noungroup LAV DAM
+noungroup TRE STU
+noungroup SHO BAN
+
+room swamp1 "dismal swamp"
+	exit north meadow
+	exit east hole
+	exit west grove
+
+room tree "top of a tall cypress tree"
+	exit down swamp1
+
+room swamp "damp hollow stump in the swamp"
+	exit up swamp1
+	exit down stump
+
+room stump "root chamber under the stump"
+	exit up swamp
+
+room chamber "semi-dark hole by the root chamber"
+	exit up stump
+
+room hall "long down sloping hall"
+	exit up chamber
+	exit down cavern
+
+room cavern "large cavern"
+	exit north ahead
+	exit south anteroom
+	exit west turn
+	exit up hall
+	exit down pits
+
+room "room" "large 8 sided room"
+	exit south ahead
+
+room anteroom "royal anteroom"
+	exit north cavern
+	exit up chamber1
+
+room lake "*I'm on the shore of a lake"
+	exit north bog
+	exit south hole
+	exit west meadow
+
+room forest "forest"
+	exit north forest
+	exit south forest
+	exit east meadow
+	exit west forest
+
+room pits "maze of pits"
+	exit north pits1
+	exit south pits2
+	exit east pits2
+	exit down pits1
+
+room pits1 "maze of pits"
+	exit west pits3
+	exit up pits
+
+room pits3 "maze of pits"
+	exit north pits4
+	exit south pits
+	exit east pits1
+	exit west pits5
+	exit up pits5
+	exit down pits4
+
+room pits2 "maze of pits"
+	exit north pits
+	exit east pits1
+	exit west pits
+	exit up pits1
+
+room pits5 "maze of pits"
+	exit south pits4
+	exit up pits3
+	exit down pits4
+
+room pits4 "maze of pits"
+	exit north pits4
+	exit south pits
+	exit east pits
+	exit west pits2
+	exit up pits3
+	exit down room1
+
+room room1 "*I'm at the bottom of a very deep chasm. High above me is
+a pair of ledges. One has a bricked up window across its face
+the other faces a Throne-room"
+	exit up pits4
+
+room room2 "*I'm on a narrow ledge by a chasm. Across the chasm is
+the Throne-room"
+	exit west chamber1
+
+room chamber1 "royal chamber"
+	exit down anteroom
+
+room ledge "*I'm on a narrow ledge by a Throne-room
+Across the chasm is another ledge"
+
+room room3 "throne room"
+	exit west ledge
+
+room meadow "sunny meadow"
+	exit south swamp1
+	exit east lake
+	exit west forest
+
+room Hell "*I think I'm in real trouble now. There's a fellow here with
+a pitchfork and pointed tail. ...Oh Hell!"
+
+room grove "hidden grove"
+	exit north forest
+	exit east swamp1
+
+room bog "quick-sand bog"
+
+room turn "Memory chip of a COMPUTER!
+I took a wrong turn!"
+	exit east cavern
+
+room lake1 "top of an oak.
+To the East I see a meadow, beyond that a lake."
+	exit down forest
+
+room hole "*I'm at the edge of a BOTTOMLESS hole"
+	exit north lake
+	exit west swamp1
+
+room "down" "*I'm on a ledge just below the rim of the BOTTOMLESS hole. I
+don't think I want to go down"
+	exit up hole
+	exit down Hell
+
+room ahead "long tunnel. I hear buzzing ahead"
+	exit north "room"
+	exit south cavern
+
+room corridor "*I'm in an endless corridor"
+	exit north corridor
+	exit south exits
+	exit east corridor
+	exit west corridor
+	exit up corridor
+	exit down corridor
+
+room exits "large misty room with strange
+unreadable letters over all the exits."
+	exit north corridor
+	exit south Hell
+	exit east forest
+	exit west Hell
+	exit up lake1
+	exit down Hell
+
+item FIRESTONE "Glowing *FIRESTONE*"
+	nowhere
+
+item hole "Dark hole"
+	at stump
+
+item RUBIES "*Pot of RUBIES*"
+	called RUB
+	at stump
+
+item it "Spider web with writing on it"
+	at tree
+
+item tree "-HOLLOW- stump and remains of a felled tree"
+	nowhere
+
+item tree1 "Cypress tree"
+	at swamp1
+
+item Water "Water"
+	at lake
+
+item mud "Evil smelling mud"
+	called MUD
+	at swamp1
+
+item FISH "*GOLDEN FISH*"
+	called FIS
+	at lake
+
+item lamp "Lit brass lamp"
+	called LAM
+	nowhere
+
+item lamp1 "Old fashioned brass lamp"
+	called LAM
+	at swamp
+
+item it1 "Rusty axe (Magic word `BUNYON` on it)"
+	called AXE
+	at lake
+
+item bottle "Water in bottle"
+	called BOT
+	at swamp
+
+item bottle1 "Empty bottle"
+	called BOT
+	nowhere
+
+item keys "Ring of skeleton keys"
+	called KEY
+	at tree
+
+item SCORE "Sign `Leave *TREASURES* here, then say: SCORE`"
+	at swamp
+
+item door "Locked door"
+	at chamber
+
+item beyond "Open door with a hallway beyond"
+	nowhere
+
+item gas "Swamp gas"
+	at swamp1
+
+item NET "*GOLDEN NET*"
+	called NET
+	at room1
+
+item bites "Chigger bites"
+	nowhere
+
+item bites1 "Infected chigger bites"
+	nowhere
+
+item slime "Patches of `OILY` slime"
+	called OIL
+	at swamp1
+
+item HONEY "*ROYAL HONEY*"
+	called HON
+	at "room"
+
+item bees "Large african bees"
+	at "room"
+
+item bear "Very thin black bear"
+	at ledge
+
+item bottle2 "Bees in a bottle"
+	called BOT
+	nowhere
+
+item dragon "Large sleeping dragon"
+	at meadow
+
+item steel "Flint & steel"
+	called FLI
+	at "down"
+
+item RUG "*Thick PERSIAN RUG*"
+	called RUG
+	at pits4
+
+item missing "Sign: `magic word's AWAY! Look la...`
+(Rest of sign is missing!)"
+	at room1
+
+item bladder "Distended gas bladder"
+	called BLA
+	nowhere
+
+item window "Bricked up window"
+	at chamber1
+
+item others "Sign here says `In many cases mud is good. In others...`"
+	at meadow
+
+item lava "Stream of lava"
+	at room1
+
+item it2 "Bricked up window with a hole in it"
+	nowhere
+
+item bricks "Loose fire bricks"
+	called BRI
+	nowhere
+
+item CROWN "*GOLD CROWN*"
+	called CRO
+	at room3
+
+item MIRROR "*MAGIC MIRROR*"
+	at ledge
+
+item bear1 "Sleeping bear"
+	nowhere
+
+item bladder1 "Empty wine bladder"
+	called BLA
+	at anteroom
+
+item glass "Broken glass"
+	called GLA
+	nowhere
+
+item Chiggers "Chiggers"
+	called CHI
+	at swamp1
+
+item bear2 "Slightly woozy bear"
+	nowhere
+
+item rare "*DRAGON EGGS* (very rare)"
+	called EGG
+	nowhere
+
+item dam "Lava stream with brick dam"
+	nowhere
+
+item FRUIT "*JEWELED FRUIT*"
+	called FRU
+	at grove
+
+item OX "*Small statue of a BLUE OX*"
+	called OX
+	at bog
+
+item RING "*DIAMOND RING*"
+	called RIN
+	nowhere
+
+item BRACELET "*DIAMOND BRACELET*"
+	called BRA
+	nowhere
+
+item here "Strange scratchings on rock says: `ALADIN was here`"
+	at pits3
+
+item again "Sign says `LIMBO. Find right exit and live again!`"
+	at exits
+
+item gore "Smoking hole. pieces of dragon and gore."
+	nowhere
+
+item here1 "Sign says `No swimming allowed here`"
+	at lake
+
+item "down" "Arrow pointing down"
+	at pits4
+
+item fish "Dead fish"
+	called FIS
+	nowhere
+
+item now "*FIRESTONE* (cold now)"
+	called FIR
+	nowhere
+
+item place "Sign says `Paul's place`"
+	at grove
+
+item Trees "Trees"
+	at forest
+
+item UNLIGHT "Sign here says `Opposite of LIGHT is UNLIGHT`"
+	at pits
+
+item lamp2 "Empty lamp"
+	called LAM
+	nowhere
+
+item rug "Muddy worthless old rug"
+	called RUG
+	nowhere
+
+item Advertisement "Large outdoor Advertisement"
+	called ADV
+	at hole
+
+item Hole "Hole"
+	at hole
+
+item VOID ""
+	nowhere
+
+item VOID1 ""
+	nowhere
+
+occur 75% when carried FISH and !carried NET
+	print "Fish have escaped back to the lake."
+	put FISH lake
+	comment "FISH ESCAPE"
+
+occur 10% when carried bites1 and !at exits
+	print "My bites have rotted my whole body!"
+	die
+	comment "DIE BITES"
+
+occur 10% when carried bites and !carried mud
+	print "
+My chigger bites are now INFECTED!
+"
+	superget bites1
+	destroy2 bites
+	comment "BITE INFECT"
+
+occur 8% when present bottle2 and !flag 17
+	print "The bees all suffocated and disappeared"
+	swap bottle2 bottle1
+	comment "BEES DIE"
+
+occur when flag 5
+	destroy MIRROR
+	put glass ledge
+	clear_flag 5
+	look
+	comment "HIT MIRROR"
+
+occur when at Hell
+	print "You lost *ALL* treasures."
+	game_over
+	comment "IN HADES"
+
+occur 5% when carried mud and !carried bottle
+	print "The mud dried up and fell off."
+	put mud swamp1
+	comment "MUD OFF"
+
+occur 8% when !carried bites and !carried bites1 and here Chiggers and !carried mud
+	superget bites
+	print "
+I'm bitten by chiggers.
+"
+	comment "BIT CHIG"
+
+occur 8% when here bees and !present mud
+	print "Bees sting me"
+	die
+	comment "BEE STING"
+
+occur when at chamber and flag 15
+	clear_dark
+	look2
+	comment "LITE"
+
+occur 50% when carried FISH and !carried bottle
+	print "Too dry, the fish died."
+	destroy2 FISH
+	get fish
+	comment "FISH DIE"
+
+occur when flag 7
+	clear_flag 7
+	put OX grove
+	inventory
+	comment "MOVE OX"
+
+occur 30% when carried Chiggers and !carried bites1 and !carried bites and !carried mud
+	superget bites
+	print "
+I'm bitten by chiggers.
+"
+	comment "GET CHIG"
+
+occur 50% when here dragon and present mud
+	clear
+	print "Dragon smells something. Awakens & attacks me!"
+	die
+	comment "MUD DRAGON"
+
+occur when flag 12 and here window
+	drop bricks
+	destroy window
+	drop it2
+	comment "BLAST WALL"
+
+occur when flag 12 and here dragon
+	drop gore
+	destroy dragon
+	comment "BLAS DRAGON"
+
+occur when flag 1 and !flag 2
+	print "` DRAGON STING ` and fades. I don't get it, I hope you do."
+	clear_flag 1
+	set_flag 2
+	comment "1ST MIRROR CLUE"
+
+occur when flag 14
+	superget bottle1
+	clear_flag 14
+	die
+	comment "BEAR MAD"
+
+occur when flag 12
+	look
+	clear_flag 12
+	comment "RESET BLAST"
+
+occur when !flag 13
+	print "A voice BOOOOMS out:"
+	set_flag 13
+	print "
+Welcome to Adventure number: 1 `ADVENTURELAND`.
+In this Adventure you're to find *TREASURES* & store them away.
+
+To see how well you're doing say: `SCORE`"
+	print "Remember you can always say `HELP`"
+	comment "INTRO"
+
+occur when flag 1 and flag 2
+	print "`Don't waste honey, get mad instead! Dam lava!?`"
+	clear_flag 1
+	clear_flag 2
+	comment "2ND MIRROR CLUE"
+
+occur when flag 16
+	clear_flag 16
+	swap lamp2 lamp
+	look2
+	comment "DEAD LAMP"
+
+occur when at bog and present RUG
+	swap RUG rug
+	comment "MUDDY RUG"
+
+action LOO LAV when here lava
+	print "There's something there all right! Maybe I should go there?"
+
+action LOO TRE when here tree
+	print "There's something there all right! Maybe I should go there?"
+
+action GET MUD when here mud and carried bites1
+	destroy2 bites1
+	get mud
+	print OK
+	print "BOY that really hit the spot!"
+
+action GET HON when here HONEY and !carried mud and here bees
+	print "Bees sting me"
+	die
+
+action GET MUD when here mud and carried bites
+	destroy2 bites
+	get mud
+	print OK
+	print "BOY that really hit the spot!"
+
+action DRO HON when carried HONEY and here bear
+	destroy2 HONEY
+	print "Bear eats the honey and falls asleep."
+	drop bear1
+	destroy bear
+
+action DRO HON when carried HONEY
+	drop HONEY
+
+action GET BEE when here bees and !carried mud
+	print "Bees sting me"
+	die
+
+action GET BEE when here bees and carried mud and !carried bottle1
+	print "First I need an empty container."
+
+action GET BEE when here bees and carried mud and carried bottle1
+	swap bottle1 bottle2
+	print OK
+
+action GET INV
+	inventory
+
+action CRO LAV when at room1
+	print "No, its too hot."
+
+action INV:
+	inventory
+
+action SAY AWA when carried RUG and at pits4
+	goto meadow
+	print "Something I'm holding vibrates and..."
+	clear_dark
+	look
+
+action LIG when !carried steel
+	print "nothing to light it with"
+
+action LIG GAS when carried bladder and carried steel
+	print "Gas bladder blew up"
+	print "in my hands!"
+	die
+	destroy2 bladder
+
+action MAK HOL when present bottle2
+	set_flag 17
+	print OK
+
+action LIG GAS when here bladder and carried steel
+	clear
+	destroy bladder
+	set_flag 12
+	print "Gas bladder blew up"
+
+action GO LED when at chamber1 and here it2
+	goto room2
+	clear
+	look
+
+action GET GAS when at swamp1 and !carried bladder1
+	print "First I need an empty container."
+
+action GET GAS when at swamp1 and carried bladder1
+	swap bladder1 bladder
+	print OK
+
+action DRO GAS when carried bladder
+	swap bladder bladder1
+	print OK
+	print "Gas dissipates. (I think you blew it)"
+
+action LIG GAS when here gas and carried steel
+	print "gas needs to be contained before it will burn"
+
+action FIN SWA
+	print "I don't know where it is"
+
+action GO THR when at room2
+	print "How?"
+
+action GET MIR when here MIRROR and !here bear
+	get MIRROR
+	print OK
+
+action DRO MIR when carried MIRROR and here RUG
+	drop MIRROR
+	print "Mirror lands softly on rug, lights up and says:"
+	set_flag 1
+
+action DRI FRU when carried FRUIT
+	print "BOY that really hit the spot!"
+	destroy2 FRUIT
+
+action GET WAT when here Water and carried bottle1
+	destroy2 bottle1
+	get bottle
+	print OK
+
+action JUM when at room2 and !carried bricks
+	goto ledge
+	look
+
+action JUM when at ledge
+	goto room2
+	look
+
+action GO THR when at ledge and here bear
+	print "Bear won't let me"
+
+action GO THR when at ledge and !here bear
+	goto room3
+	clear
+	look
+
+action MAK LAV when present bricks and here lava
+	swap FIRESTONE lava
+	drop dam
+	look2
+	comment "BUILD DAM"
+
+action GO LAV when at room1
+	print "No, its too hot."
+
+action DRO BEE when carried bottle2 and here bear
+	print "Bees madden bear, bear then attacks me!"
+	destroy2 bottle2
+	drop bees
+	set_flag 14
+
+action GET WAT when here Water and !carried bottle1
+	print "First I need an empty container."
+
+action REA WEB when here it
+	print "Chop 'er down!"
+
+action GO TRE when here tree1
+	goto tree
+	clear
+	look
+
+action DRO WAT when carried bottle and !at room1
+	swap bottle bottle1
+	print OK
+	print "It soaks into the ground"
+
+action FIL LAM when present slime and carried lamp2
+	destroy2 slime
+	destroy2 lamp2
+	print "Lamp is now full & lit"
+	refill_lamp
+
+action CHO TRE when here tree1 and !present keys and carried it1
+	destroy tree1
+	drop tree
+	print "TIMBER. Something fell from the tree top & vanished in the swamp"
+
+action OPE DOO when at chamber and here door and !carried keys
+	print "I can't its locked"
+
+action UNL DOO when at chamber and here door and !carried keys
+	print "I can't its locked"
+
+action THR AXE when carried it1
+	print "In 2 words tell me at what...like: AT TREE"
+	set_flag 3
+	drop it1
+
+action OPE DOO when here door and carried keys
+	destroy door
+	drop beyond
+	look2
+
+action CRO:
+	print "How?"
+
+action JUM when at room2 and carried bricks
+	print "Somethings too heavy. I fall."
+	die
+
+action DAM LAV when present bricks and here lava
+	swap FIRESTONE lava
+	drop dam
+	look2
+
+action GET BRI when here bricks
+	get bricks
+	print OK
+	print "Its heavy!"
+
+action STO:
+	print "To stop game say QUIT"
+
+action QUI:
+	score
+	game_over
+
+action GET MIR when here MIRROR and here bear
+	print "Bear won't let me"
+
+action DRO MIR when carried MIRROR and !here RUG
+	print "Mirror hits floor and shatters into a MILLION pieces"
+	drop glass
+	destroy2 MIRROR
+
+action AT BEA when flag 3 and !here MIRROR
+	print "OK, I threw it."
+	print "A voice BOOOOMS out:"
+	print "please leave it alone"
+	clear_flag 3
+
+action AT DRA when flag 3 and here dragon
+	print "OK, I threw it."
+	print "It doesn't seem to bother him at all!"
+	clear_flag 3
+
+action SCO:
+	score
+
+action HEL when carried bites
+	clear
+	print "A voice BOOOOMS out:"
+	print "Medicine is good for bites."
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+
+action HEL when carried bites1
+	clear
+	print "A voice BOOOOMS out:"
+	print "Medicine is good for bites."
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+
+action GO LED when at room1
+	print "Not here."
+
+action GET LAV when here lava
+	print "No, its too hot."
+
+action SCR when here bear
+	print "Bear is so startled that he FELL off the ledge!"
+	put bear2 room1
+	destroy bear
+
+action DRO BEE when carried bottle2 and here dragon
+	drop bees
+	drop rare
+	destroy dragon
+	print "The bees attack the dragon which gets so annoyed it gets up
+and flys away..."
+
+action AT WIN when flag 3
+	clear_flag 3
+	print "Nothing happens"
+	print "A voice BOOOOMS out:"
+	print "Remember you can always say `HELP`"
+
+action OPE DOO when here beyond
+	look
+
+action GO HOL when here it2
+	clear
+	goto room2
+	look
+
+action AT BEA when flag 3 and here MIRROR
+	destroy MIRROR
+	set_flag 5
+	print "OH NO... Bear dodges... CRASH!"
+	clear_flag 4
+
+action FIN AXE
+	print "A voice BOOOOMS out:"
+	print "I don't know where it is"
+
+action WAK:
+	print "Nothing happens"
+	print "Maybe if I threw something?..."
+
+action GO TRE when here tree
+	goto swamp
+	clear
+	look
+
+action CHO TRE when here tree1 and carried it1 and carried keys
+	destroy tree1
+	drop tree
+	print TIMBER!
+
+action ATT BEA when here bear
+	print "Bear won't let me"
+	print "Maybe if I threw something?..."
+
+action ATT DRA when here dragon
+	print "It doesn't seem to bother him at all!"
+	print "Maybe if I threw something?..."
+
+action DRI WAT when carried bottle
+	print "BOY that really hit the spot!"
+	destroy2 bottle
+	get bottle1
+
+action DRI WAT when here Water
+	print "BOY that really hit the spot!"
+
+action DRI HON when present HONEY
+	print "BOY that really hit the spot!"
+	destroy2 HONEY
+
+action AT DOO when here door and flag 3
+	destroy door
+	drop beyond
+	print "Lock shatters"
+	clear_flag 3
+
+action SWI when at bog and loaded
+	print "Somethings too heavy. I fall."
+
+action SWI when at bog and !loaded
+	goto lake
+	clear
+	look
+
+action CHO when !carried it1
+	print "I'm not carrying ax, take inventory!"
+
+action SAY BUN when present OX and carried it1
+	println_noun
+	print "Something I'm holding vibrates and..."
+	put it1 grove
+	set_flag 7
+
+action SAY BUN when carried it1 and !at bog
+	println_noun
+	print "Something I'm holding vibrates and..."
+	put it1 grove
+	inventory
+
+action RUB LAM when present lamp
+	print "No, its too hot."
+
+action GET MUD when here mud
+	get mud
+	print OK
+
+action RUB LAM when present lamp1 and !flag 8
+	print "A glowing Genie appears, drops somehting, then vanishes."
+	drop RING
+	set_flag 8
+
+action RUB LAM when present lamp1 and flag 11
+	print "Nothing happens"
+
+action RUB LAM when present lamp1 and flag 10
+	print "A glowing Genie appears, says `Boy you're selfish`, takes
+something and then makes `ME` vanish!"
+	set_flag 11
+	die
+	destroy2 RING
+
+action RUB LAM when present lamp1 and flag 9
+	print "A glowing Genie appears, says `Boy you're selfish`, takes
+something and then makes `ME` vanish!"
+	set_flag 10
+	die
+	destroy2 BRACELET
+
+action RUB LAM when present lamp1 and flag 8
+	print "A glowing Genie appears, drops somehting, then vanishes."
+	drop BRACELET
+	set_flag 9
+
+action SCR when carried bites
+	print "BOY that really hit the spot!"
+	print "
+My chigger bites are now INFECTED!
+"
+	swap bites bites1
+
+action SCR when carried bites1
+	print "BOY that really hit the spot!"
+	print "My bites have rotted my whole body!"
+	die
+
+action SWI when !at bog
+	print "Not here."
+
+action WAV:
+	print "Nothing happens"
+
+action SAY BUN when here it1
+	print OK
+	println_noun
+	print "The ax vibrated!"
+
+action LIG LAM when present lamp
+	print "Lamp burns with a cold flameless blue glow."
+
+action FIN TRE
+	print "Try the swamp"
+
+action DRO BEE when carried bottle2
+	drop bees
+	swap bottle2 bottle1
+	print OK
+
+action FIN KEY
+	print "Try the swamp"
+
+action FIN MUD
+	print "Try the swamp"
+
+action AT SHO when flag 3 and at bog
+	clear_flag 3
+	put it1 lake
+	print OK
+
+action GO TRE when at forest
+	goto lake1
+	clear
+	look
+
+action HEL when at bog
+	print "A voice BOOOOMS out:"
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+	print "You may need to say magic words here"
+
+action HEL when at forest
+	print "A voice BOOOOMS out:"
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+
+action HEL when at room2
+	print "A voice BOOOOMS out:"
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+
+action HEL when at meadow
+	print "A voice BOOOOMS out:"
+	print "There are only 3 ways to wake the Dragon!"
+
+action HEL when at pits1
+	print "A voice BOOOOMS out:"
+	print "You may need to say magic words here"
+
+action HEL when at pits4
+	print "A voice BOOOOMS out:"
+	print "You may need to say magic words here"
+
+action HEL when at pits2
+	print "A voice BOOOOMS out:"
+	print "You may need to say magic words here"
+
+action HEL when at ledge
+	print "A voice BOOOOMS out:"
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+
+action HEL when at "room"
+	print "A voice BOOOOMS out:"
+	print "Read the sign in the meadow!"
+
+action UNL DOO when carried keys and here door
+	drop beyond
+	destroy door
+
+action GO HAL when here beyond
+	goto hall
+	set_dark
+	clear
+	look
+
+action LIG LAM when present lamp1
+	swap lamp1 lamp
+	print "Lamp burns with a cold flameless blue glow."
+	look2
+
+action UNL LAM when present lamp
+	swap lamp lamp1
+	print OK
+	print "Lamp is off"
+	look2
+
+action GET WEB when here it
+	print "I'm bit by a spider"
+	die
+
+action GO HOL when here gore
+	goto Hell
+	clear
+	look
+
+action GET SIG
+	print "A voice BOOOOMS out:"
+	print "please leave it alone"
+
+action LIG when carried steel and !here gas
+	print "That won't ignite"
+
+action SCR:
+	print "Nothing happens"
+
+action SAY AWA when carried RUG and !at pits4 and !at exits and !at bog
+	goto pits4
+	print "Something I'm holding vibrates and..."
+	set_dark
+	look
+
+action HEL when at swamp1
+	print "A voice BOOOOMS out:"
+	print "Try --> `LOOK, JUMP, SWIM, CLIMB, FIND, TAKE, SCORE, DROP`
+and any other verbs you can think of..."
+
+action THR AXE when !carried it1
+	print "I'm not carrying ax, take inventory!"
+
+action HEL when at chamber1
+	print "A voice BOOOOMS out:"
+	print "Blow it up!"
+	print "Try the swamp"
+
+action SAY BUN
+	print OK
+	println_noun
+	print "Nothing happens"
+
+action GO HOL when at stump
+	goto chamber
+	clear
+	look
+
+action GET HON when here HONEY
+	get HONEY
+	print OK
+
+action HEL:
+	print "Nothing happens"
+	print "You might try examining things..."
+
+action CHO:
+	print "Nothing happens"
+	print "Maybe if I threw something?..."
+
+action THR:
+	print "Sorry, I can only throw the ax."
+
+action AT when flag 3
+	clear_flag 3
+	print "OK, I threw it."
+	print "Nothing happens"
+
+action SAV GAM
+	print OK
+	save_game
+
+action RUB:
+	print "Nothing happens"
+
+action SAY:
+	print OK
+	println_noun
+	print "Nothing happens"
+
+action DRI:
+	print "Huh? I don't think so!"
+
+action DRO WAT when carried bottle and at room1
+	print "Sizzle..."
+	continue
+	swap bottle bottle1
+
+occur 0% when here FIRESTONE
+	swap now FIRESTONE
+
+action GET FIR when here FIRESTONE
+	print "No, its too hot."
+
+action GET FIR when here now
+	print OK
+	get now
+
+action FIN:
+	print "I don't know where it is"
+
+action REA ADV when present Advertisement
+	clear
+	print "
+Check with your favorite computer dealer for the next Adventure
+program: PIRATE ADVENTURE. If they don't carry `ADVENTURE` have
+them call: 1-305-862-6917 today!
+"
+
+action LOO HOL
+	print "There's something there all right! Maybe I should go there?"
+
+action JUM:
+	print "Not here."
+
+action ATT SPI
+	print "I don't know where it is"
+
+action ATT:
+	print "How?"
+
+action LOO:
+	print OK
+	print "I see nothing special"
+	look2
+
+action AT:
+	print "What?"
+
+action GO HOL when at hole
+	goto "down"
+	look2
+

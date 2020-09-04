@@ -3,6 +3,8 @@ BBC Micro port of the TRS-80 BASIC version of Scott Adams's Adventureland as pub
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[>> Play online <<](http://bbcmicro.co.uk/jsbeeb/play.php?cpuMultiplier=4&autoboot&disc=https://raw.githubusercontent.com/ahope1/Beeb-Adventureland/master/AL.ssd)**
 
+There was [a bug](https://github.com/ahope1/Beeb-Adventureland/issues/5) in the SoftSide listing that made the game impossible to win. The bug has been fixed in this BBC Micro port.
+
 A BBC Micro port of the TRS-80 BASIC version of Scott Adams's [Pirate Adventure](https://github.com/ahope1/Beeb-Pirate-Adventure) is also available.  
 
 ## The files

@@ -6,7 +6,7 @@ https://github.com/ahope1/Beeb-Adventureland
 
 Note that handling the BEES near the end of the game can be tricky. They sometimes sting you, and you may be sent to limbo, from where you can escape if you GO EAST. (Or just try again.)
 
-Note also that whenever there's a blank line in the walkthrough below, you must pause and check whether you've been bitten by chiggers. If you have, then you must GET MUD to heal the bites.
+Note also that whenever there's a blank line in the walkthrough below, you must pause and check whether you've been bitten by chiggers. If you have, then you must GET MUD to heal the bites, and then DROP MUD.
 
 GO EAST
 GO EAST

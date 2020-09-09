@@ -1,4 +1,4 @@
-Walkthrough (solution) for the 2020 BBC Micro port of the "original" TRS-80 BASIC version of Scott Adams's text adventure game Adventureland, as it was published in SoftSide magazine in 1980. 
+Walkthrough (solution) for the 2020 BBC Micro port of the "original" TRS-80 BASIC version of Scott Adams's text adventure game Adventureland, as published in SoftSide magazine in 1980. 
 
 The SoftSide listing had a fatal bug in it, which has been fixed in the BBC Micro port:
 

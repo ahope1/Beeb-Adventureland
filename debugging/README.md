@@ -1,6 +1,6 @@
 # Debugging the BASIC version of Adventureland
 
-**[Update: I've just realised that my identification of a bug was flawed. See [comment](https://github.com/ahope1/Beeb-Adventureland/issues/5#issuecomment-689749549).]**
+**[Update: I've just realised that my identification of a supposed bug was flawed. See [comment](https://github.com/ahope1/Beeb-Adventureland/issues/5#issuecomment-689749549).]**
 
 **adv01.sck** is a "decompilation", with [ScottKit](https://github.com/MikeTaylor/scottkit), of the game datafile for the widely available _later_ version of Adventureland, which has been [debugged](https://github.com/ahope1/Beeb-Adventureland/blob/master/debugging/adv01.sck#L485), presumably by Scott Adams himself. The game datafile is distributed in a format known as ".DAT format" or "TRS-80 format". The game datafile has been "decompiled" with ScottKit to produce _adv01.sck_.
 

@@ -1,4 +1,4 @@
-Walkthrough (solution) for the 2020 BBC Micro port of the "original" TRS-80 BASIC version of Scott Adams's text adventure game Adventureland, as published in SoftSide magazine in 1980. 
+Walkthrough (solution) for the 2020 BBC Micro port of the "original" TRS-80 BASIC version of Scott Adams's text adventure game Adventureland, as published in SoftSide magazine in 1980
 
 Note that handling the BEES near the end of the game can be tricky. They sometimes sting you, and you may be sent to limbo, from where you can escape if you GO EAST. (Or just try again.)
 

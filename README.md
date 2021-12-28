@@ -5,7 +5,7 @@ A port to the BBC Micro of the TRS-80 BASIC version of Scott Adams's text advent
 
 [Background info](https://ahopeful.wordpress.com/2020/09/13/digging-up-adventureland-scott-adams-1980/) at Retroactive Fiction.
 
-(A [BBC Micro port](https://github.com/ahope1/Beeb-Pirate-Adventure) of the TRS-80 BASIC version of Scott Adams's **Pirate Adventure** is also available.)  
+(The TRS-80 BASIC version of Scott Adams's **Pirate Adventure** also has a [BBC Micro port](https://github.com/ahope1/Beeb-Pirate-Adventure).)  
 
 
 ## The files
